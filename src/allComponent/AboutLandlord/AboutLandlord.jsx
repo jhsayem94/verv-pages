@@ -7,7 +7,7 @@ import translate from '../../assets/image/translate.png';
 import marker from '../../assets/image/marker.png';
 import Image from 'next/image';
 import PropertyDemand from '../Shared/PropertyDemand/PropertyDemand';
-import TenentReview from './TenentReview';
+import TenentReview from '../Shared/ReviewSection/TenentReview';
 
 
 const AboutLandlord = () => {
@@ -18,16 +18,16 @@ const AboutLandlord = () => {
             <div className="bg-[#eef1f3]">
                 <div className="lg:w-[1216px] w-96 mx-auto lg:py-[86px]  py-12 lg:grid grid-cols-1 flex justify-between items-start">
                     <div className='lg:flex grid grid-cols-1  gap-x-10 gap-y-6'>
-                        <div><Image className="w-[104px] h-[104px] rounded-full" src={profileImage} alt="" /></div>
+                        <div><Image className="w-[104px] h-[104px] rounded-full" src={profileImage} alt="landlord profile" /></div>
                         <div className='grid grid-cols-1 content-between gap-y-4'>
                             <h1 className="text-[#233244] lg:text-5xl text-2xl font-bold font-['Inter'] "> About Nolan Lubin </h1>
                             <div className='grid lg:grid-cols-2 grid-cols-1  gap-y-2'>
                                 <div className='flex gap-2  items-center'>
-                                    <div><Image src={translate} alt="" /></div>
+                                    <div><Image src={translate} alt="icon" /></div>
                                     <h6 className="text-[#30455f] lg:text-lg text-sm font-medium font-['Inter'] ">  Speaks English and French</h6>
                                 </div>
                                 <div className='flex gap-2 items-center'>
-                                    <div><Image src={marker} alt="" /></div>
+                                    <div><Image src={marker} alt="icon" /></div>
                                     <h6 className="text-[#30455f] lg:text-lg text-sm font-medium font-['Inter']">  Lives in London, United Kingdom</h6>
                                 </div>
                             </div>

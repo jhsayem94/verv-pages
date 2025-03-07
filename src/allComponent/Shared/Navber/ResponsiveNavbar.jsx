@@ -66,7 +66,7 @@ const ResponsiveNavbar = () => {
           </DropdownMenu>
         </div>
         <div className="w-[100px] h-[40px]">
-          <Image width={100} src={logo} alt="" />
+          <Image width={100} src={logo} alt="logo" />
         </div>
         <div className="flex justify-between items-center gap-2">
           <svg
