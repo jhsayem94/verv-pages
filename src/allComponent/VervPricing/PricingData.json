@@ -2,25 +2,22 @@
     {
         "id": 1,
         "pricingTitle":"Listing Only",
-        "price": 54.99,
         "buttonName":"Add Listing Now for Free",
+        "buttonColor":"bg-[#FFFFFF]",
+        "buttonText":"text-[#314660]",
         "bgClr": "bg-[#EEF1F3]",
         "advertTitle":"Active Listing on",
         "offers": [
             {
-              "id": 1,
               "item": "Listings on multiple platforms"
             },
             {
-              "id": 2,
               "item": "Message prospective tenants"
             },
             {
-              "id": 3,
               "item": "Arrange viewings"
             },
             {
-              "id": 4,
               "item": "Active listings for 3 months"
             }
         ]
@@ -30,6 +27,8 @@
         "pricingTitle":"Premier Listings",
         "price": 74.99,
         "buttonName":"Add Listing Now",
+        "buttonColor":"bg-[#314660]",
+        "buttonText":"text-[#FFFFFF]",
         "bgClr": "bg-[#F5F5F5]",
         "advertTitle":"3 Months Adverting on",
         "offers": [
@@ -52,6 +51,8 @@
         "pricingTitle":"Rent Ready",
         "price": 54.99,
         "buttonName":"Add Listing Now",
+        "buttonColor":"bg-[#50B533]",
+        "buttonText":"text-[#FFFFFF]",
         "bgClr": "bg-[#faf4ff]",
         "advertTitle":"3 Months Adverting on",
         "offers": [
