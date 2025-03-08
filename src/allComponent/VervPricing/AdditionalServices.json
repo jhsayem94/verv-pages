@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "title": "Tenant Referencing",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "title": "Rent Collection",
+        "price": 39.99
+    },
+    {
+        "id": 3,
+        "title": "Gas Safety Certificate (CP12)",
+        "price": 54.99
+    },
+    {
+        "id": 4,
+        "title": "Energy Performance Certificate (EPC)",
+        "price": 85.99
+    },
+    {
+        "id": 9,
+        "title": "Electrical Safety Certificate (EICR)",
+        "price": 75.99
+    },
+    {
+        "id": 5,
+        "title": "Inventory & Check-In/Out",
+        "price": 95.99
+    },
+    {
+        "id": 6,
+        "title": "Pro Photos",
+        "price": 25.99
+    },
+    {
+        "id": 7,
+        "title": "Floor Plans",
+        "price": 9.99
+    },
+    {
+        "id": 8,
+        "title": "Accompanied Viewings Service",
+        "price": 29.99
+    }
+
+]
