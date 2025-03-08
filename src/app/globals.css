@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-
+.shadow-custom {
+  @apply shadow-[0px_1px_4px_0px_rgba(16,24,40,0.10),0px_1px_4px_0px_rgba(16,24,40,0.06)];
+}
 
 @plugin "tailwindcss-animate";
 
