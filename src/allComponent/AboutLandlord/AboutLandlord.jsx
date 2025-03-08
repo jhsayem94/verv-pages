@@ -47,8 +47,8 @@ const AboutLandlord = () => {
                     <div className='w-[264px] bg-white rounded-xl lg:block hidden shadow absolute top-20 right-0'>
                         <div className='p-9 grid grid-cols-1 gap-y-3'>
                             <div className=''>
-                                <h2 className="text-[#233244] text-4xl font-semibold font-['Inter'] leading-[44px] flex items-center">430 
-                                <Plus strokeWidth={3} /></h2>
+                                <h2 className="text-[#233244] text-4xl font-semibold font-['Inter'] leading-[44px] flex items-center">430
+                                    <Plus strokeWidth={3} /></h2>
                                 <h4 className="text-[#233244] text-lg font-medium font-['Inter'] leading-7" >Review</h4>
                             </div>
                             <div className=" h-px  bg-[#ced3d9]" />
