@@ -39,7 +39,7 @@ const PropertyDemand = () => {
           align: "start",
         }}
         setApi={setApi}
-        className="w-[1216px]"
+        className=""
       >
         <CarouselContent className="lg:-ml-2">
           {propertyData.map((property) => (
