@@ -71,8 +71,8 @@ const PricingCard = ({ data }) => {
                                 </div>)
                             }
                         </div>
-                        <button className="h-[33px] py-2 px-6 bg-white rounded-[32px] border border-[#50b533] flex-col justify-center items-center gap-1 flex">
-                            <span className="text-[#50b533] text-sm font-semibold font-['Inter']">Show more</span>
+                        <button className=" py-2 px-6 bg-white rounded-[32px] border-2 border-[#50B533] flex-col justify-center items-center gap-1 flex">
+                            <span className="text-[#50b533] text-[14px] font-semibold font-['Inter']">Show more</span>
                         </button>
                     </div>
                 </div>
