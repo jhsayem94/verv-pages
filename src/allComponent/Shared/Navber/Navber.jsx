@@ -84,6 +84,9 @@ const Navbar = () => {
                       <Link href="/vervpricing">
                         <DropdownMenuItem>Verv Pricing</DropdownMenuItem>
                       </Link>
+                      <Link href="/createprofile">
+                        <DropdownMenuItem>Create Profile</DropdownMenuItem>
+                      </Link>
                     </DropdownMenuGroup>
                   </DropdownMenuContent>
                 </DropdownMenu>
