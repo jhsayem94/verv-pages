@@ -29,10 +29,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)] hidden md:block sticky top-0 z-20">
-      <div className="w-[1216px] m-auto flex justify-between items-center text-[#314660]">
+    <nav className="py-6 bg-white shadow-[0px_4px_4px_rgba(0,0,0,0.10)]  md:block sticky top-0 z-20">
+      <div className="lg:w-[1216px] w-96 m-auto flex justify-between items-center text-[#314660]">
         <Link href="/">
-          <Image src={logo} width={137.951} alt="verv logo" />
+          <Image src={logo}  className="lg:w-[137px] w-4/5"  alt="verv logo" />
         </Link>
         <div className="text-lg flex justify-end items-center gap-14">
           <div className="font-medium">
@@ -78,14 +78,17 @@ const Navbar = () => {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-36">
                     <DropdownMenuGroup>
-                      <Link href="/aboutlandlord">
+                      <Link href="/about-landlord">
                         <DropdownMenuItem>About Landlord</DropdownMenuItem>
                       </Link>
-                      <Link href="/vervpricing">
+                      <Link href="/verv-pricing">
                         <DropdownMenuItem>Verv Pricing</DropdownMenuItem>
                       </Link>
-                      <Link href="/createprofile">
+                      <Link href="/create-profile">
                         <DropdownMenuItem>Create Profile</DropdownMenuItem>
+                      </Link>
+                      <Link href="/rental-process">
+                        <DropdownMenuItem>Rental Process</DropdownMenuItem>
                       </Link>
                     </DropdownMenuGroup>
                   </DropdownMenuContent>
