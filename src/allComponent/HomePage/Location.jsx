@@ -58,6 +58,7 @@ const Location = () => {
     return (
         <div>
             <APIProvider apiKey={mapApi}>
+                {/* Need Google paid API key */}
                 <Map
                     style={{ width: '500px', height: '300px' }}
                     defaultCenter={{ lat: 22.54992, lng: 0 }}
