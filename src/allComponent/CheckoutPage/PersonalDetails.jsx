@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-const PaymentCard = ({landlord}) => {
+const PersonalDetails = ({landlord}) => {
     const {
         register,
         handleSubmit,
@@ -14,13 +14,13 @@ const PaymentCard = ({landlord}) => {
         resolver: zodResolver(),
     });
     return (
-        <div className='grid grid-cols-1 gap-y-5'>
+        <div >
                         <div className='lg:w-[800px] w-96 bg-[#FCFCFC] shadow-custom p-6 rounded-xl ' >
                             <div className='flex justify-between items-center mb-4'>
                                 <h3 className='text-slate-500 text-lg font-semibold'>Personal Details</h3>
                                 <Button className="bg-gray-100 hover:bg-slate-700 rounded text-slate-700 hover:text-gray-100 text-[18px] font-semibold py-2 px-4">Edit</Button>
                             </div>
-                            <div className='flex justify-between'>
+                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-y-4 gap-x-4'>
                                 <div>
                                     <p className='text-slate-500 text-[16px] text-base font-medium mb-2'>Full Name</p>
                                 <InputField
@@ -56,14 +56,8 @@ const PaymentCard = ({landlord}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-[#FCFCFC] shadow-custom p-6 rounded-xl ' >Payment Details</div>
-                        <div className='bg-[#FCFCFC] shadow-custom p-6 rounded-xl lg:w-[800px] w-96' >
-                            <h4 className='text-slate-500 text-lg font-semibold mb-2' >Cancellation Policy</h4>
-                            <p className='text-slate-700 text-lg font-normal mb-2' >At Verv, we understand that plans can change unexpectedly. That’s why we’ve crafted our cancellation policy to provide you with flexibility and peace of mind.</p>
-                            <Link href="#" className='text-[#50B533] text-lg font-semibold ' >Terms and Conditions</Link>
-                        </div>
                     </div>
     );
 };
 
-export default PaymentCard;
+export default PersonalDetails;
