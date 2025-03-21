@@ -93,6 +93,9 @@ const Navbar = () => {
                       <Link href="/home-page">
                         <DropdownMenuItem>Home Page</DropdownMenuItem>
                       </Link>
+                      <Link href="/checkout-page">
+                        <DropdownMenuItem>Checkout Page</DropdownMenuItem>
+                      </Link>
                     </DropdownMenuGroup>
                   </DropdownMenuContent>
                 </DropdownMenu>
