@@ -16,7 +16,9 @@ const landlord = {
     email: "johndoe@gmail.com",
     phone: "+44 0000 39683"
 }
-const stripePromise = loadStripe("pk_test_51R6F3JEKOKMzhKNBdfYysjhdmKsAbmyGCkOGJBdWiWS6elMhPPCWR3aiGkwu32ofWytPKhjq72i9xa1LWrojbQ3100HCVnkVTk");
+const stripePromise = loadStripe("");
+// pk_test_51R6F3JEKOKMzhKNBdfYysjhdmKsAbmyGCkOGJBdWiWS6elMhPPCWR3aiGkwu32ofWytPKhjq72i9xa1LWrojbQ3100HCVnkVTk 
+
 
 const CheckoutPage = () => {
     const { submitPayment } = usePayment();
