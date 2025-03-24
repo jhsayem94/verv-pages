@@ -7,16 +7,16 @@ import { Check } from 'lucide-react';
 import PersonalDetails from './PersonalDetails';
 import Link from 'next/link';
 import { Elements } from "@stripe/react-stripe-js";
-import {loadStripe} from '@stripe/stripe-js';
 // import { PaymentProvider } from "../context/PaymentContext";
 import PaymentForm from './PaymentForm';
 import { usePayment } from "../../context/PaymentContext";
+import { loadStripe } from '@stripe/stripe-js';
 const landlord = {
     name: "Syed Sadman Sakib",
     email: "johndoe@gmail.com",
     phone: "+44 0000 39683"
 }
-const stripePromise = loadStripe("Use-Key");
+const stripePromise = loadStripe("pk_test_51R6F3JEKOKMzhKNBdfYysjhdmKsAbmyGCkOGJBdWiWS6elMhPPCWR3aiGkwu32ofWytPKhjq72i9xa1LWrojbQ3100HCVnkVTk");
 // pk_test_51R6F3JEKOKMzhKNBdfYysjhdmKsAbmyGCkOGJBdWiWS6elMhPPCWR3aiGkwu32ofWytPKhjq72i9xa1LWrojbQ3100HCVnkVTk 
 
 

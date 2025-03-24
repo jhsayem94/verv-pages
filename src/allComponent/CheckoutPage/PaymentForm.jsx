@@ -2,10 +2,11 @@
 "use client"
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+
 import { useElements, CardNumberElement, CardExpiryElement, CardCvcElement, useStripe } from "@stripe/react-stripe-js";
 import { usePayment } from "../../context/PaymentContext"; // Importing context
+import { zodResolver } from "@hookform/resolvers/zod";
 
 // Zod Validation Schema
 const paymentSchema = z.object({
@@ -24,7 +25,7 @@ const PaymentForm = () => {
 
   const onSubmit = async (data) => {
     // e.preventDefault()
-    console.log(elements)
+    console.log(stripe)
     if (!stripe || !elements) return;
     
     const cardNumberElement = elements.getElement(CardNumberElement);
