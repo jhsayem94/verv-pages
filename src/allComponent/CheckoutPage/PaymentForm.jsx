@@ -175,7 +175,7 @@ const PaymentForm = () => {
         email: data.email,
       },
     });
-
+    console.log( card);
     if (error) {
       alert(error.message);
     } else {
@@ -190,7 +190,7 @@ const PaymentForm = () => {
   }, [setSubmitPayment, handleSubmit]);
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mx-auto">
+    <div className="">
       <h2 className="text-2xl font-semibold text-center text-gray-700 mb-4">Stripe Payment</h2>
       
       <div className="space-y-4">
