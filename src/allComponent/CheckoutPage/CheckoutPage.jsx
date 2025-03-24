@@ -10,13 +10,13 @@ import { Elements } from "@stripe/react-stripe-js";
 import {loadStripe} from '@stripe/stripe-js';
 // import { PaymentProvider } from "../context/PaymentContext";
 import PaymentForm from './PaymentForm';
-import { usePayment } from "../../context/usePayment";
+import { usePayment } from "../../context/PaymentContext";
 const landlord = {
     name: "Syed Sadman Sakib",
     email: "johndoe@gmail.com",
     phone: "+44 0000 39683"
 }
-const stripePromise = loadStripe("pk_test_51MBOSJEOBnxFVRslr6WRlgceSTMkXwx9LHhIewVu0HSt0nsLA1TigOcCI2NflK5QgNeWt9DGwxvVZL350DfSwChT00OuWCRypr");
+const stripePromise = loadStripe("pk_test_51R6F3JEKOKMzhKNBdfYysjhdmKsAbmyGCkOGJBdWiWS6elMhPPCWR3aiGkwu32ofWytPKhjq72i9xa1LWrojbQ3100HCVnkVTk");
 
 const CheckoutPage = () => {
     const { submitPayment } = usePayment();
@@ -26,8 +26,7 @@ const CheckoutPage = () => {
     return (
         <div className='lg:w-[1216px] w-94 mx-auto my-8'>
             <h3 className=" text-slate-500 text-2xl font-semibold mb-4 ">Checkout</h3>
-            <form action="">
-                <div className='lg:flex justify-between items-start gap-x-8'>
+            <div className='lg:flex justify-between items-start gap-x-8'>
                     <div className='grid grid-cols-1 gap-y-5 mb-4 lg:mb-0'>
                         <PersonalDetails
                             landlord={landlord}
@@ -68,7 +67,6 @@ const CheckoutPage = () => {
                         </div>
                     </div>
                 </div>
-            </form>
 
         </div>
     );

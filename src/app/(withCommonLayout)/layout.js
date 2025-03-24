@@ -1,7 +1,7 @@
 // import Footer from "@/components/Shared/Footer/Footer";
 
 import Navbar from "@/allComponent/Shared/Navber/Navber";
-import { PaymentProvider } from "@/context/usePayment";
+import { PaymentProvider } from "@/context/PaymentContext";
 
 const layout = ({ children }) => {
   return (
