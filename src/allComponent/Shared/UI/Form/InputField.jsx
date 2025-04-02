@@ -10,6 +10,7 @@ const InputField = ({
   label,
   placeholder,
   type,
+  disabled,
   register,
   errors,
 }) => {
@@ -23,6 +24,7 @@ const InputField = ({
           className="flex w-full items-center self-stretch px-3 py-1.5 rounded-md border border-gray-400 bg-white"
           type={type}
           id={registerName}
+          disabled= {disabled}
           placeholder={placeholder}          
           {...register(registerName, registerValueType)}
         />

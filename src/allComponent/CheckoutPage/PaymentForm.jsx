@@ -7,6 +7,7 @@ import { z } from "zod";
 import { useElements, CardNumberElement, CardExpiryElement, CardCvcElement, useStripe } from "@stripe/react-stripe-js";
 import { usePayment } from "../../context/PaymentContext"; // Importing context
 import { zodResolver } from "@hookform/resolvers/zod";
+import InputField from "../Shared/UI/Form/InputField";
 
 // Zod Validation Schema
 const paymentSchema = z.object({
@@ -27,7 +28,7 @@ const PaymentForm = () => {
     // e.preventDefault()
     console.log(stripe)
     if (!stripe || !elements) return;
-    
+
     const cardNumberElement = elements.getElement(CardNumberElement);
     const cardExpiryElement = elements.getElement(CardExpiryElement);
     const cardCvcElement = elements.getElement(CardCvcElement);
@@ -45,7 +46,7 @@ const PaymentForm = () => {
         email: data.email,
       },
     });
-    console.log( paymentMethod);
+    console.log(paymentMethod);
     if (error) {
       alert(error.message);
     } else {
@@ -64,7 +65,7 @@ const PaymentForm = () => {
       <h2 className="text-2xl font-semibold text-center text-gray-700 mb-4">Stripe Payment</h2>
       <div className="space-y-4">
         {/* Name Input */}
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700">Name</label>
           <input
             type="text"
@@ -73,25 +74,42 @@ const PaymentForm = () => {
             className="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
           />
           {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>}
+        </div> */}
+        <div>
+          <p className='block text-sm font-medium text-gray-700 mb-1'>Name</p>
+          <InputField
+            registerName="Name"
+            type="text"
+            placeholder="Name"
+            register={register}
+            errors={errors}
+            className="w-full "
+          />
         </div>
 
         {/* Email Input */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">Email</label>
-          <input
+          <p className='block text-sm font-medium text-gray-700 mb-1'>Name</p>
+          <InputField
+            registerName="Email"
             type="email"
-            placeholder="Enter your email"
-            {...register("email")}
-            className="w-full px-4 py-2 mt-1 border rounded-lg focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Enter Your Email"
+            register={register}
+            errors={errors}
+            className="w-full "
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
         </div>
         {/* Card Number */}
         <div>
-          <label className="block text-sm font-medium text-gray-700">Card Number</label>
-          <div className="border rounded-lg p-3 bg-gray-50">
-            <CardNumberElement className="w-full" />
-          </div>
+          <p className='block text-sm font-medium text-gray-700 mb-1'>Name</p>
+          <InputField
+            registerName="Email"
+            type="email"
+            placeholder="Enter Your Email"
+            register={register}
+            errors={errors}
+            className="w-full "
+          />
         </div>
         {/* Expiry and CVV */}
         <div className="flex gap-4">
@@ -109,7 +127,7 @@ const PaymentForm = () => {
           </div>
         </div>
       </div>
-      
+
     </div>
   );
 };

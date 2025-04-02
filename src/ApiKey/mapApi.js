@@ -1,1 +1,1 @@
-export const mapApi = '';
+export const mapApi = 'HjW7g5grF2ljC0GvPyuk';

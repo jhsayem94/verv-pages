@@ -45,7 +45,6 @@ const CheckoutPage = () => {
                                 
                             </Elements>
                         </div>
-
                         <div className='bg-[#FCFCFC] shadow-custom p-6 rounded-xl lg:w-[800px] w-96' >
                             <h4 className='text-slate-500 text-lg font-semibold mb-2' >Cancellation Policy</h4>
                             <p className='text-slate-700 text-lg font-normal mb-2' >At Verv, we understand that plans can change unexpectedly. That’s why we’ve crafted our cancellation policy to provide you with flexibility and peace of mind.</p>
